@@ -1,0 +1,159 @@
+// @import url('https://fonts.googleapis.com/css');
+@import "./styles/_variables";
+@import "./styles/items.scss";
+@import "./styles/header.scss";
+@import "./styles/subheader.scss";
+@import "./styles/loader.scss";
+@import "./styles/modal.scss";
+@import "./styles/cart.scss";
+@import "./styles/auth.scss";
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html{
+  font-family: 'Doppio One',sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+@media screen and (max-width:480px){
+
+
+  nav{
+      /* background-color: red; */
+      padding: 20px;
+  }
+
+  .search{
+      display: none;
+  }
+  .navBottom{
+      flex-wrap: wrap;
+  }
+  .menuItem{
+      margin: 20px;
+      font-weight: 700;
+      font-size: 20px;
+  }
+  
+  .slider{
+      clip-path:none;
+  }
+  .sliderImg{
+      width: 90%;
+  }
+  .sliderBg{
+      width: 100%;
+      height: 100%;
+  }
+  .sliderTitle{
+      display:none;
+  }
+  .sliderPrice{
+      top: unset;
+      bottom: -50px;
+      left: 0;
+      background-color: lightgray;
+  }
+
+  .buyButton{
+      top:0;
+      /* bottom: 0; */
+      right: 0;
+  }
+
+  .features{
+      flex-direction: column;
+  }
+  .product{
+      clip-path: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .productImg{
+      width: 80%;
+  }
+  .productDetails{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      /* position: absolute; */
+      top: 0;
+  }
+
+  .productTitle{
+      font-size: 50px;
+      margin: 0;
+  }
+  .gallery{
+      display: none;
+  }
+  .newSeason{
+      flex-direction: column;
+  }
+
+  .nsItem:nth-child(2){
+   /* padding: 50px; */
+  }
+
+  footer{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footerLeft{
+      padding: 20px;
+      width: 90%;
+  }
+
+  .footerRight{
+      padding: 20px;
+      width: 90%;
+      align-items: center;
+      background-color: whitesmoke;
+  }
+  .payment{
+      width: 90%;
+      padding: 20px;
+  }
+
+}
+
+
+
+
+
